@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #0F172A; */
+  background:
+  radial-gradient(50% 50% at 100% 0,#0f172a 0%  5% ,#121b31 6%  15%,#0f172a 16% 25%,#121b31 26% 35%,#0f172a 36% 45%,
+   #121b31 46% 55%,#0f172a 56% 65%,#121b31 66% 75%,#0f172a 76% 85%,#121b31 86% 95%,
+   #0000 96%),
+  radial-gradient(50% 50% at 0 100%,#0f172a 0%  5% ,#121b31 6%  15%,#0f172a 16% 25%,#121b31 26% 35%,#0f172a 36% 45%,
+   #121b31 46% 55%,#0f172a 56% 65%,#121b31 66% 75%,#0f172a 76% 85%,#121b31 86% 95%,
+   #0000 96%),
+  radial-gradient(50% 50%,#0f172a 0%  5% ,#121b31 6%  15%,#0f172a 16% 25%,#121b31 26% 35%,#0f172a 36% 45%,
+   #121b31 46% 55%,#0f172a 56% 65%,#121b31 66% 75%,#0f172a 76% 85%,#121b31 86% 95%,
+   #0000 96%),
+  radial-gradient(50% 50%,#0f172a 0%  5% ,#121b31 6%  15%,#0f172a 16% 25%,#121b31 26% 35%,#0f172a 36% 45%,
+   #121b31 46% 55%,#0f172a 56% 65%,#121b31 66% 75%,#0f172a 76% 85%,#121b31 86% 95%,
+   #0000 96%) 32px 32px;
+background-size: 64px 64px;
+background-color: #0f172a;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;  
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  } 
+}
+
+
+/* Fade-in animation */
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out animation */
+  @keyframes fadeOutAnimation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the fadeIn class */
+  .fadeIn {
+    animation: fadeInAnimation 0.3s ease-in;
+  }
+  
+  /* Apply the animation to the fadeOut class */
+  .fadeOut {
+    animation: fadeOutAnimation 0.3s ease-out;
+  }
